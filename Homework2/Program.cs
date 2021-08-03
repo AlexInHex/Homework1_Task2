@@ -22,7 +22,9 @@ namespace Homework2
             string dayOfWeekNow;
 
 
-         
+            DateTime dt = DateTime.Now;
+            DayOfWeek day = dt.DayOfWeek;
+            dayOfWeekNow = day.ToString();
 
 
             Console.WriteLine("Какой сегодня день?");
@@ -32,30 +34,44 @@ namespace Homework2
             {
                 case "Mon":
                     Console.WriteLine("Сегодня " + (Days)1 + " 1-й день недели, до выходного еще 4 дня");
+                    if (day == DayOfWeek.Monday)
+                        Console.WriteLine("Сегодня ПОНЕДЕЛЬНИК!!!");
                     break;
 
                 case "Tue":
                     Console.WriteLine("Сегодня " + (Days)2 + " 2-й день недели, до выходного еще 3 дня");
+                    if (day == DayOfWeek.Tuesday)
+                        Console.WriteLine("Сегодня ВТОРНИК!!!");
                     break;
 
                 case "Wed":
                     Console.WriteLine("Сегодня " + (Days)3 + " 3-й день недели, до выходного еще 2 дня");
+                    if (day == DayOfWeek.Wednesday)
+                        Console.WriteLine("Сегодня СРЕДА!!!");
                     break;
 
                 case "Thu":
                     Console.WriteLine("Сегодня " + (Days)4 + " 4-й день недели, до выходного еще 1 день!");
+                    if (day == DayOfWeek.Thursday)
+                        Console.WriteLine("Сегодня Четверг!!!");
                     break;
 
                 case "Fri":
                     Console.WriteLine("Сегодня " + (Days)5 + " 5-й день недели, завтра выходной!!!");
+                    if (day == DayOfWeek.Friday)
+                        Console.WriteLine("Сегодня ПЯТНИЦА!!!");
                     break;
 
                 case "Sat":
                     Console.WriteLine("Сегодня " + (Days)6 + " 6-й день недели, сегодня можно лечь попозже");
+                    if (day == DayOfWeek.Saturday)
+                        Console.WriteLine("Сегодня СУББОТА!!!");
                     break;
 
                 case "Sun":
                     Console.WriteLine("Сегодня " + (Days)7 + " 7-й день недели, завтра на работку!");
+                    if (day == DayOfWeek.Sunday)
+                        Console.WriteLine("Сегодня ВОСКРЕСЕНЬЕ!!!");
                     break;
 
                 default:
