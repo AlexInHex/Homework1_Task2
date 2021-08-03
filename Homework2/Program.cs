@@ -1,5 +1,4 @@
 ﻿using System;
-using 
 
 namespace Homework2
 {
@@ -23,7 +22,7 @@ namespace Homework2
             string dayOfWeekNow;
 
 
-            DateTime now = new DateTime();
+         
 
 
             Console.WriteLine("Какой сегодня день?");
